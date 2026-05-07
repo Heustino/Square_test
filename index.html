@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Travel — Votre partenaire pour vos voyages</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div id="cursor"></div>
+    <div id="cursor-trail"></div>
+    <canvas id="stars-canvas"></canvas>
+    <div class="scanlines"></div>
+
+    <nav>
+      <div class="logo">✦ SQUARE TRAVEL</div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#airlines">Compagnies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="plane-container">
+        <div class="plane">✈</div>
+        <div class="plane">✈</div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">✦ Yaoundé · Cameroun · Est. 2024 ✦</p>
+        <h1 class="hero-title">
+          <span class="t1">EXPLOREZ</span>
+          <span class="t2">LE MONDE</span>
+        </h1>
+        <p class="hero-sub">Votre partenaire pour vos voyages à moindre coût — billets, hôtels, visas et bien plus encore.</p>
+        <div class="hero-cta">
+          <button class="btn-primary">Réserver maintenant</button>
+          <button class="btn-outline">Nos destinations</button>
+        </div>
+      </div>
+      <div class="scroll-line">
+        <span>Découvrir</span>
+        <div class="scroll-dot"></div>
+      </div>
+    </section>
+
+    <div class="stats-bar">
+      <div class="stat-item">
+        <span class="stat-number" id="c1">0</span>
+        <span class="stat-label">Compagnies partenaires</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" id="c2">0</span>
+        <span class="stat-label">Destinations mondiales</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" id="c3">0</span>
+        <span class="stat-label">Clients satisfaits</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" id="c4">0</span>
+        <span class="stat-label">Prix imbattables</span>
+      </div>
+    </div>
+
+    <div class="horizon"></div>
+
+    <section class="services" id="services">
+      <div class="reveal">
+        <span class="section-label">// Ce que nous offrons</span>
+        <h2 class="section-title">Nos <em>Services</em></h2>
+      </div>
+      <div class="services-grid reveal">
+        <div class="service-card">
+          <span class="service-number">01</span>
+          <span class="service-icon">🎫</span>
+          <h3>Billets d'Avion</h3>
+          <p>Achat et réservation de billets d'avion aux meilleurs tarifs disponibles sur le marché.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-number">02</span>
+          <span class="service-icon">🏨</span>
+          <h3>Réservation Hôtel</h3>
+          <p>Hébergements soigneusement sélectionnés pour tous les budgets dans le monde entier.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-number">03</span>
+          <span class="service-icon">🌍</span>
+          <h3>Visa Touristique Dubaï</h3>
+          <p>Traitement rapide et fiable de votre visa touristique pour les Émirats Arabes Unis.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-number">04</span>
+          <span class="service-icon">📋</span>
+          <h3>Enrôlement Passeport</h3>
+          <p>Assistance complète pour les démarches d'enrôlement et renouvellement de passeport.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-number">05</span>
+          <span class="service-icon">💳</span>
+          <h3>Billetterie Moins Cher</h3>
+          <p>Accès aux offres spéciales, promotions et tarifs réduits en exclusivité pour nos clients.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-number">06</span>
+          <span class="service-icon">🛡️</span>
+          <h3>Assistance 24h/7j</h3>
+          <p>Notre équipe est disponible à tout moment pour vous accompagner avant et pendant votre voyage.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="horizon"></div>
+
+    <section class="airlines" id="airlines">
+      <div class="reveal">
+        <span class="section-label">// Nos partenaires officiels</span>
+        <h2 class="section-title">Nos <em>Compagnies</em></h2>
+        <p style="color:rgba(255,255,255,0.45);font-size:0.9rem;margin-top:0.5rem">Des compagnies de premier rang à votre service</p>
+      </div>
+      <div class="airlines-grid reveal">
+        <div class="airline-badge">✈ Air France</div>
+        <div class="airline-badge">✈ Ethiopian Airlines</div>
+        <div class="airline-badge">✈ Bruxelles Airlines</div>
+        <div class="airline-badge">✈ Air Côte d'Ivoire</div>
+        <div class="airline-badge">✈ Kenya Airways</div>
+        <div class="airline-badge">✈ Royal Air Maroc</div>
+        <div class="airline-badge">✈ Egypt Air</div>
+        <div class="airline-badge">✈ Air Sénégal</div>
+        <div class="airline-badge">✈ Afrijet</div>
+      </div>
+    </section>
+
+    <div class="tagline-bar">
+      <p class="tagline-text">Votre partenaire pour vos voyages — <em>à moindre coût</em></p>
+    </div>
+
+    <section class="contact" id="contact">
+      <div class="reveal">
+        <span class="section-label">// Prenez contact avec nous</span>
+        <h2 class="section-title">Contactez <em>Square Travel</em></h2>
+      </div>
+      <div class="reveal">
+        <span class="contact-globe">🌐</span>
+        <span class="phone-number">+237 698 107 563</span>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span>📧</span>
+            <strong>squaretrvelyao@yahoo.com</strong>
+          </div>
+          <div class="contact-item">
+            <span>📍</span>
+            <span>Yaoundé Bastos, Carrefour Labo <strong>Meka</strong> face MAARIF SCHOOL</span>
+          </div>
+        </div>
+        <div style="margin-top:2.5rem;display:flex;justify-content:center;gap:1.5rem">
+          <button class="btn-primary" style="font-size:0.8rem">📱 WhatsApp</button>
+          <button class="btn-outline" style="font-size:0.8rem">📷 Instagram</button>
+          <button class="btn-outline" style="font-size:0.8rem">👍 Facebook</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-logo">Square Travel</div>
+      <div class="footer-copy">© 2024 Square Travel · Yaoundé, Cameroun</div>
+      <div class="social-links">
+        <div class="social-link">ig</div>
+        <div class="social-link">fb</div>
+        <div class="social-link">wa</div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

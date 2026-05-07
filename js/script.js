@@ -63,3 +63,18 @@ const revealObs = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.1 });
 revealEls.forEach(el => revealObs.observe(el));
+
+// Hamburger menu
+function toggleMenu(){
+  const nav=document.getElementById('navLinks');
+  const hb=document.getElementById('hamburger');
+  const ov=document.getElementById('nav-overlay');
+  nav.classList.toggle('open');
+  hb.classList.toggle('open');
+  ov.style.display=nav.classList.contains('open')?'block':'none';
+}
+function closeMenu(){
+  document.getElementById('navLinks').classList.remove('open');
+  document.getElementById('hamburger').classList.remove('open');
+  document.getElementById('nav-overlay').style.display='none';
+}
